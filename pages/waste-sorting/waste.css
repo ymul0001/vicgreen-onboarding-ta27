@@ -1,0 +1,108 @@
+.wrapper {
+    position: fixed; /* Positioning and size */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(31, 31, 31, 0.5); /* color */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.5s linear;
+}
+.card-flex {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.waste-sorting-title {
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10vh;
+}
+
+.card {
+    width: 20%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+}
+
+.bin-img {
+    width: 200px;
+}
+
+.bin-link {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    background-color: rgb(8, 189, 8);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    transition: all .2s;
+}
+
+.bin-link:hover {
+    background-color: rgb(8, 151, 8);
+}
+
+.info-modal {
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    height: 60vh;
+    width: 50%;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.inside-subtitle,
+.avoid-subtitle {
+    text-align: left;
+}
+
+.content,
+.avoid {
+    margin-bottom: 5vh;
+}
+
+.modal-title {
+    margin-top: 3vh;
+    font-size: 3rem;
+}
+
+.modal-description {
+    margin-top: 3vh;
+    text-align: justify;
+}
+
+.modal-close-btn {
+    width: 30%;
+    border: none;
+    height: 6vh;
+    margin-top: 2vh;
+    font-size: 1.1rem;
+    transition: all .2s;
+    background-color:rgb(8, 189, 8);
+    color: #fff;
+}
+
+.modal-close-btn:hover {
+    cursor: pointer;
+    background-color:rgb(8, 151, 8);
+}

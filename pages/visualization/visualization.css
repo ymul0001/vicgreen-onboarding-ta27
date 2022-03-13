@@ -1,0 +1,48 @@
+/* .contamination-rate,
+.average-yield-cost,
+.kerbside-recycleable {
+    width: 50%;
+    margin: auto;
+} */
+
+body {
+    background: rgb(243, 243, 243);
+}
+
+.contamination-rate-title {
+    margin-bottom: 5.9vh;
+}
+
+.kerbside-recycleable {
+    height: 33vh;
+}
+
+#yield-cost-option,
+#kerbside-recycleable-option {
+    display: block;
+    outline: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.contamination-rate {
+    margin-top: 15vh;
+}
+
+.average-yield-cost {
+    margin-top: 15vh;
+}
+
+.yield-cost-title {
+    margin-bottom: 1.5vh;
+}
+
+.contamination-rate {
+    width: 50%;
+}
+
+.average-yield-cost {
+    width: 50%;
+}
