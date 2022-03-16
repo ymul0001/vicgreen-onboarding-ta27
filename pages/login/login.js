@@ -6,7 +6,7 @@ const passwordInput = document.querySelector('.password');
 const loginBtn = document.querySelector('.login-btn');
 const usernameErrorMessage = document.querySelector('.username-error-message');
 const passwordErrorMessage = document.querySelector('.password-error-message');
-const wrongErrorMessage = document.querySelector('.wrong-credential-error');
+const wrongErrorMessage = document.querySelector('.wrong-credentials-error');
 
 
 /**
@@ -40,6 +40,8 @@ const findUserNameAndPassword = () => {
         password: passwordInput.value.trim()
     }})
     .then(result => {
+        usernameErrorMessage.style.opacity = 0;
+        passwordErrorMessage.style.opacity = 0;
         if (result.data.status === 200) {
             sessionStorage.setItem('loggedIn', true);
             window.location.href = '../../index.html';
