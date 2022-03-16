@@ -37,6 +37,15 @@
       </div>
     </div>
     <script>
+      const onLoadCheckCredentials = () => {
+          if (sessionStorage.getItem('loggedIn') === null) {
+              window.location.href = "../login/login.html";
+          }    
+      }
+
+      onLoadCheckCredentials();
+    </script>
+    <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");

@@ -25,6 +25,15 @@ const data = [
 ]
 
 /**
+ * Define additional functions
+ */
+ const onLoadCheckCredentials = () => {
+    if (sessionStorage.getItem('loggedIn') === null) {
+        window.location.href = "../login/login.html";
+    }    
+}
+
+/**
  * Define all DOM elements
  */
 const redBtn = document.querySelector('.red-link');
@@ -81,3 +90,7 @@ modalCloseBtn.addEventListener('click', (e) => {
     wrapper.style.opacity = '0';
     wrapper.style.visibility = 'hidden';
 })
+
+
+//call functions
+onLoadCheckCredentials();

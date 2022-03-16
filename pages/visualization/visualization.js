@@ -197,8 +197,11 @@ const kerbsideRecycleableTempChart = new Chart(
 /**
  * Declare all additional functions
  */
-
-
+const onLoadCheckCredentials = () => {
+    if (sessionStorage.getItem('loggedIn') === null) {
+        window.location.href = "../login/login.html";
+    }    
+}
 
 /**
  * Declare all graph functions
@@ -289,3 +292,4 @@ kerbsideRecycleableDropdown.addEventListener("change", () => {
 findContaminationRate();
 findAverageYieldCost();
 findKerbsideRecycleable();
+onLoadCheckCredentials();
