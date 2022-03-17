@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Play the quiz</title>
+    <title>Play a quiz</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="stylesheet" href="./index.css">
@@ -14,10 +14,10 @@
       <div class="container">
         <h1 class="logo"><a href="../../index.html">VicGreen</a></h1>
         <ul>
-          <li><a href=".">Home</a></li>
-          <li><a href="./pages/visualization/visualization.html">Infographics</a></li>
-          <li><a href="./pages/waste-sorting/waste.html">How to sort garbage</a></li>
-          <li><a href="./pages/quiz/index.html">Play a quiz</a></li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../visualization/visualization.html">Infographics</a></li>
+          <li><a href="../waste-sorting/waste.html">How to sort garbage</a></li>
+          <li><a href="../quiz/index.html">Play a quiz</a></li>
         </ul>
       </div>
     </nav>
@@ -37,15 +37,13 @@
       </div>
     </div>
     <script>
-      const onLoadCheckCredentials = () => {
-          if (sessionStorage.getItem('loggedIn') === null) {
+       const onLoadCheckCredentials = () => {
+       if (sessionStorage.getItem('loggedIn') === null) {
               window.location.href = "../login/login.html";
           }    
-      }
-
-      //call functions
-      onLoadCheckCredentials();
-
+       }
+       //call functions
+        onLoadCheckCredentials();
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
