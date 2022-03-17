@@ -22,20 +22,12 @@ function fixNav() {
     }
 }
 
-const onLoadCheckCredentials = () => {
-    if (sessionStorage.getItem('loggedIn') === null) {
-        window.location.href = "./pages/login/login.html";
-    }    
-}
-
 /**
  * call functions
  */
 window.addEventListener('scroll', fixNav);
 
 
-//call functions
-onLoadCheckCredentials();
 
 
 
